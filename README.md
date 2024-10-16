@@ -8,10 +8,10 @@ This project implements an XGBoost Regressor for predicting house prices. XGBoos
 
 
 ## 2. Features
-- Data Preprocessing: Data cleaning, normalization, and splitting into training and testing sets.
-- Model Training: Training XGBoost model using xgboost library.
-- Model Evaluation: Evaluating the performance of the model using metrics such as R-square and Mean Absolute Error
-- Visualization: Visualization of feature importance and model predictions versus actual values.
+- **Data Preprocessing**: Data cleaning, normalization, and splitting into training and testing sets.
+- **Model Training**: Training XGBoost model using xgboost library.
+- **Model Evaluation**: Evaluating the performance of the model using metrics such as R-square and Mean Absolute Error
+- **Visualization**: Visualization of feature importance and model predictions versus actual values.
 
 
 ## 3. Project Structure
@@ -37,7 +37,7 @@ This project implements an XGBoost Regressor for predicting house prices. XGBoos
 1. Clone the repository:
 
 ```python
-    git clone https://github.com/adamsdossantos/sonar.git
+    git clone https://github.com/adamsdossantos/house_pricing.git
     
 ```
 2. Create a virtual environment and activate it:
@@ -53,24 +53,23 @@ This project implements an XGBoost Regressor for predicting house prices. XGBoos
 
 4. Launch the Jupyter Notebook:
 ```python
-    jupyter notebook sonar.ipynb
+    jupyter notebook house_pricing.ipynb
 ```
 ## 5. Usage
 
-Open the sonar.ipynb file and follow the step-by-step instructions provided in the notebook. The notebook includes:
+Open the house_pricing.ipynb file and follow the step-by-step instructions provided in the notebook. The notebook includes:
 
-- Data Loading and Preprocessing: Load data from data/ folder and perform necessary preprocessing.
-- Model Training: Train an SVM model with adjustable hyperparameters.
-- Model Evaluation: Evaluate the model using accuracy, precision, recall, F1-score, and ROC-AUC curve.
+- **Data Loading and Preprocessing**: Load data from the BostonHousing.csv and perform necessary preprocessing and feature engineering.
+- **Model Training**: Train an XGBoost Regressor with adjustable hyperparameters like learning_rate, n_estimators, max_depth, and more.
+- **Model Evaluation**: Evaluate the model using metrics like MSE, and R² to measure regression accuracy.
+- **Visualization**: Visualize feature importance using XGBoost's built-in plot functions and compare predicted versus actual values.
 
 ## 6. Results in Test
 | Metric    |  Value   |
 |-----------|----------|
-| Accuracy  |  81%   |
-| Precision |  79%   |
-| Recall    |  86%   |
-| F1-Score  |  82%   |
-| ROC-AUC Curve| 80% |
+| MSE  |  2.07   |
+| R-square |  0.905   |
+|
 
 ## 7. Contributing
 
